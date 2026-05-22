@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="light" lang="fi" data-title-fi="Rivigalin Kennel — Belgianpaimenkoiria &amp; Mittelspitzejä" data-title-en="Rivigalin Kennel — Belgian Shepherds &amp; Mittelspitz">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rivigalin Kennel — Belgianpaimenkoiria &amp; Mittelspitzejä</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Work+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/theme.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* Variant-specific show/hide. */
+  [data-current-variant="v1"] .variant-v2 { display: none; }
+  [data-current-variant="v2"] .variant-v1 { display: none; }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col overflow-x-hidden" data-page="home">
+<div data-mount="header"></div>
+
+<main class="flex-grow"
+      data-variant-root
+      data-variant-key="home"
+      data-variants="v1,v2"
+      data-variant-label="Hero">
+  <!-- ====== HERO ====== -->
+  <section class="relative w-full overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
+
+    <!-- v1: subtle cream blob -->
+    <div class="variant-v1 absolute top-0 right-0 w-full md:w-3/4 h-[110%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[280px] -z-10 origin-top-right rotate-3 md:rotate-0 opacity-30"></div>
+
+    <!-- v2: bold yellow geometric blob -->
+    <div class="variant-v2 absolute top-0 right-0 w-full md:w-[60%] h-[115%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[300px] -z-10 origin-top-right rotate-2 md:rotate-0 opacity-90"></div>
+    <div class="variant-v2 absolute -top-20 -left-20 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl -z-10 hidden md:block"></div>
+
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 flex flex-col gap-6 relative z-10">
+        <h1 class="text-headline-lg-mobile md:text-display-lg font-display-lg text-on-background">
+          <span class="block">Rivigalin Kennel:</span>
+          <span class="text-primary block mt-2" data-en="Belgian Shepherds &amp; Mittelspitz">Belgianpaimenkoiria &amp; Mittelspitzejä</span>
+        </h1>
+        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg" data-en="Family-focused, home-style breeding in the heart of Inkoo. Our dogs live alongside us every day — cherished family members on sunny forest walks and on the home couch.">
+          Perhekeskeistä, kodinomaista kasvatusta luonnon keskellä Inkoossa. Koiramme elävät kanssamme arjessa, rakastettuina perheenjäseninä aurinkoisilla metsäretkillä ja kotisohvalla.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-4">
+          <a class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-on-primary-container transition-all duration-300 organic-shadow transform hover:-translate-y-1" href="our-dogs.html" data-en="Meet Our Dogs">
+            Tutustu Koiriimme
+          </a>
+          <a class="bg-transparent border-2 border-secondary text-secondary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-secondary hover:text-on-secondary transition-all duration-300" href="contact.html" data-en="Get in Touch">
+            Ota Yhteyttä
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="w-full md:w-1/2 relative flex justify-center items-center">
+        <!-- v1 image (snow dog, circular) -->
+        <div class="variant-v1 relative w-full max-w-md aspect-square">
+          <div class="absolute inset-0 bg-sun-yellow-light rounded-blob transform translate-x-4 translate-y-4 -z-10"></div>
+          <img alt="Musta belgianpaimenkoira lumessa" class="object-cover w-full h-full rounded-blob organic-shadow border-8 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKib7jjQNtyfwg6XA6T3O-cO7sAaL4DQtbGZMc9ym1oAtsrBu1KKkcwnGaTMxTzla9ItPfnQMCBU2po6MiQDzCJKWrPyTT0pIGyVS03LoAK67_-ZLrokzUr1qFWpkIyXa86slYQtlzABdOszM2-_ziWoy_kgxp56ozDlkqZIre4RCqtaqRSJMHIf3yl_w0FNWS2mTtCW5YzytIy5raH1dfzoIX5mVlsxaPAbXV2yd5Isl5lt5vuXnJA7NuLZVy6ljCGYP5YlGZhQ">
+          <div class="absolute top-10 -left-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
+            <span class="material-symbols-outlined text-secondary" data-fill="1">forest</span>
+            <span class="font-label-md text-label-md text-on-surface">Inkoo, Finland</span>
+          </div>
+        </div>
+
+        <!-- v2 image (forest dog, organic blob) -->
+        <div class="variant-v2 relative w-full max-w-md aspect-square">
+          <div class="absolute inset-0 bg-sun-yellow-light rounded-blob-2 transform -translate-x-4 -translate-y-4 -z-10"></div>
+          <img alt="Iloinen belgianpaimenkoira metsässä" class="object-cover w-full h-full rounded-blob organic-shadow border-8 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszyefnTqks_sbYgaMaAdOzkd2mVvfOw41tJzB2zFQV-yZvsZU-1RRs9aZL8r2RgzcSIr7m34Xsskh97VC_mYvy7HTjCsiwEKMn4XOsROyLMvJNDvgGnZiqTNeWvfVzS3LL1zOsxJfJTETlUtDNASI0coDX-jLjETSDToITyszHUF361Ulc8xaR1ySr4VjI3-YyY5u77R7tcAJgeE2uiM0wKoI7C75iHeF5Hsu2kh18Ng246F66FWIRfA1ngj8Dcm9rRCJB7Sv7fs">
+          <div class="absolute top-10 -left-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
+            <span class="material-symbols-outlined text-secondary" data-fill="1">forest</span>
+            <span class="font-label-md text-label-md text-on-surface">Inkoo, Finland</span>
+          </div>
+          <div class="absolute bottom-10 -right-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
+            <span class="material-symbols-outlined text-paw-pink" data-fill="1">favorite</span>
+            <span class="font-label-md text-label-md text-on-surface" data-en="Family-raised">Perhekasvatus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OUR BREEDS ====== -->
+  <section class="py-24 bg-surface-container-lowest relative" id="rodut">
+    <div class="absolute inset-0 bg-paw-pattern opacity-40 pointer-events-none"></div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-headline-lg font-headline-lg text-on-background mb-4" data-en="The Breeds We Raise">Kasvattamamme Rodut</h2>
+        <p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto" data-en="We focus on two wonderful breeds that fit perfectly into an active, loving home.">Keskitymme kahteen upeaan rotuun, jotka sopivat täydellisesti aktiiviseen ja rakastavaan kotiin.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-gutter">
+        <!-- Belgian Shepherd -->
+        <a href="our-dogs.html" class="block bg-surface rounded-3xl p-8 organic-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border-t-4 border-primary">
+          <div class="w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-tertiary-container relative">
+            <img alt="Belgianpaimenkoira" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4t6Tg2ECdIaqdlw5pCb1g5vC3TQOV57UyjyRTk0xG6mR9mPR7XLjkPGym67LFKHTzn0CG2Ki9uS_N4jAc5RybFGSj8MerUI-Dp8nH7WiWANCy8ioTnkkRUFhTf-xYyjmFgWBhUCVPmitDcxk_Tj6Wt2WK14Qk8suxp7It1OyHLbzArv9KoTpBFsPaM_dfhTmLSIr8Yh-c4a-HlK_NBdDMyg7zP2uvOKqPMvf1wdpRan-TMBXsXIvrougII0YGb_6fZ_YfINlz_ZE08g">
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-background mb-3" data-en="Belgian Shepherd">Belgianpaimenkoira</h3>
+          <span class="bg-surface-container text-secondary font-caption text-caption px-3 py-1 rounded-full mb-4">Groenendael</span>
+          <p class="text-body-md font-body-md text-on-surface-variant mb-6" data-en="Intelligent, loyal and energetic companion. Well suited to an active family, hobbies and shows.">
+            Älykäs, uskollinen ja energinen kumppani. Sopii aktiiviseen perheeseen, harrastuksiin ja näyttelyihin.
+          </p>
+          <span class="text-primary font-label-md text-label-md flex items-center gap-1 group-hover:text-on-primary-container transition-colors">
+            <span data-en="Read more">Lue lisää</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </a>
+        <!-- Mittelspitz -->
+        <a href="our-dogs.html#mittel" class="block bg-surface rounded-3xl p-8 organic-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border-t-4 border-secondary">
+          <div class="w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-secondary-container relative">
+            <img alt="Mittelspitz" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR5SKi9o8t2X251bOq5k1MywUkdxinIrcJAzjbTdf9fMZqR-2loQ4yI2Sh7HcJ2IGRgqn7g9Kw6CU0LOhso9v8QyFthttDT9oYi12Y32ZBrJPN8JQs8wqmZ3ErB8tjDuiEqgOzWBY8CEhLbEDz3rJP3I51pxxOnoaOfHi_QCW_s9Vtw_BjNbCSTustjQaF99D5rPmfQGmeunuNmcc_D3hLRz82XbH8u94gEVAvSNoehwto7uplpMOolXab-bE1VCSkqQx6ESKf6ckbxQ">
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-background mb-3">Mittelspitz</h3>
+          <span class="bg-surface-container text-primary font-caption text-caption px-3 py-1 rounded-full mb-4" data-en="Companion dog">Seurakoira</span>
+          <p class="text-body-md font-body-md text-on-surface-variant mb-6" data-en="Lively, affectionate and alert spitz. A wonderful family dog who loves being part of everything you do.">
+            Eloisa, kiintyvä ja valpas pystykorva. Erinomainen perhekoira, joka rakastaa olla mukana kaikessa tekemisessä.
+          </p>
+          <span class="text-secondary font-label-md text-label-md flex items-center gap-1 group-hover:text-secondary-fixed-dim transition-colors">
+            <span data-en="Read more">Lue lisää</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PHILOSOPHY ====== -->
+  <section class="py-24 bg-tertiary-fixed/30 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-64 h-64 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col md:flex-row items-center gap-16">
+      <div class="w-full md:w-1/2 relative">
+        <div class="aspect-[4/3] rounded-blob-2 overflow-hidden organic-shadow relative">
+          <img alt="Koiria metsässä" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_YnlPcyZJo7RcrN1uf5aHu53_irI6Tm1BQp2dx6ZeE9Zg5xYIp6f-aVBPWyd6GtQkyPcGh4rsqUWlFpzslvBYOE3ZMzR0vZ64mxDzh_8-F0gzCl4GNiRKEhV0zmPN3nWVoLWJfs3lI1bLm-SZYVG-Uwc7l6YcT4kRSAyaBHTmuDwpQ9B78cqR8tZPg_yGoYktpekiYQUsLFPfHkMfF36mh1elaE7xXOTpqfPuDHWs_lkBjoP7IrtVJczU9LWTdSkAS0XYXR8vBI">
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-surface p-4 rounded-full organic-shadow text-primary-container">
+          <span class="material-symbols-outlined text-4xl" data-fill="1">eco</span>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <span class="text-secondary font-label-md text-label-md uppercase tracking-wider mb-2 block" data-en="Our Philosophy">Filosofiamme</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-background mb-6" data-en="Life in the shade of the forest">Elämää metsän siimeksessä</h2>
+        <p class="text-body-md font-body-md text-on-surface-variant mb-6" data-en="We believe the happiest dog is one that gets to live a life true to its kind. Our home in the Inkoo countryside offers our dogs the ideal environment.">
+          Uskomme, että onnellisin koira on sellainen, joka saa elää lajityypillistä elämää. Inkoon maaseudulla sijaitseva kotimme tarjoaa koirillemme ihanteellisen ympäristön.
+        </p>
+        <p class="text-body-md font-body-md text-on-surface-variant mb-8" data-en="Our dogs don’t live in separate kennel quarters — they’re cherished family members. They sleep on the couch next to us, run free on our large grounds, and join in our daily life. That builds a confident, well-balanced foundation for our puppies, too.">
+          Meillä koirat eivät asu erillisissä kennelti loissa, vaan ne ovat rakkaita perheenjäseniä. Ne nukkuvat sohvalla vieressämme, ulkoilevat vapaana suurella tontillamme ja osallistuvat arkemme touhuihin. Tämä luo luottavaisen ja tasapainoisen pohjan myös kasvateillemme.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3 text-on-background font-body-md">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span data-en="Home-style upbringing">Kodinomaista kasvatusta</span>
+          </li>
+          <li class="flex items-center gap-3 text-on-background font-body-md">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span data-en="Plenty of outdoor time in nature">Runsaasti ulkoilua luonnossa</span>
+          </li>
+          <li class="flex items-center gap-3 text-on-background font-body-md">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span data-en="Health and temperament first">Terveys ja luonne edellä</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-mount="footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

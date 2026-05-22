@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Dogs - Rivigalin Kennel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#725b00",
+                        "on-background": "#1b1c1a",
+                        "surface-container-high": "#eae8e4",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-container": "#e7d5be",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#8ad3d5",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#f9d461",
+                        "on-surface-variant": "#4d4636",
+                        "on-primary-fixed-variant": "#574500",
+                        "primary-fixed": "#ffe086",
+                        "teal-dark": "#2E5C5E",
+                        "primary": "#735c00",
+                        "surface-tint": "#735c00",
+                        "on-primary-fixed": "#231b00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-fixed": "#231a0c",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#f2e0c9",
+                        "secondary": "#14696b",
+                        "inverse-surface": "#30312e",
+                        "outline-variant": "#d0c6b0",
+                        "background": "#fbf9f5",
+                        "on-tertiary-fixed-variant": "#514534",
+                        "surface-dim": "#dbdad6",
+                        "surface": "#fbf9f5",
+                        "surface-container-low": "#f5f3ef",
+                        "tertiary-fixed-dim": "#d5c4ae",
+                        "tertiary": "#695c4a",
+                        "inverse-primary": "#e7c352",
+                        "surface-container-highest": "#e4e2de",
+                        "on-secondary-fixed-variant": "#004f51",
+                        "surface-bright": "#fbf9f5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#1e6f71",
+                        "earth-gray": "#918370",
+                        "on-tertiary-container": "#685c4a",
+                        "secondary-fixed": "#a5eff1",
+                        "surface-container": "#efeeea",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary-fixed": "#002021",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#e7c352",
+                        "secondary-container": "#a5eff1",
+                        "paw-pink": "#F8B4B4",
+                        "outline": "#7e7664",
+                        "sun-yellow-light": "#FEF3C7",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "organic": "60% 40% 30% 70% / 60% 30% 70% 40%",
+                        "organic-alt": "40% 60% 70% 30% / 40% 50% 50% 60%"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "section-y": "120px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Work Sans", "sans-serif"],
+                        "caption": ["Be Vietnam Pro", "sans-serif"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    },
+                    boxShadow: {
+                        'ambient': '0 10px 40px -10px rgba(107, 94, 76, 0.08)',
+                        'ambient-hover': '0 20px 50px -10px rgba(107, 94, 76, 0.12)',
+                    },
+                    backgroundImage: {
+                        'paw-pattern': "radial-gradient(#dbdad6 1.5px, transparent 1.5px)",
+                    },
+                    backgroundSize: {
+                        'paw-size': "30px 30px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            transition: border-radius 8s ease-in-out infinite alternate;
+        }
+        .organic-shape-alt {
+            border-radius: 40% 60% 70% 30% / 40% 50% 50% 60%;
+            transition: border-radius 7s ease-in-out infinite alternate-reverse;
+        }
+        
+        .blob-bg {
+            position: absolute;
+            z-index: -1;
+            filter: blur(80px);
+            opacity: 0.5;
+        }
+        
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden relative min-h-screen flex flex-col">
+<!-- Decorative Background Elements -->
+<div class="fixed inset-0 pointer-events-none z-[-2] bg-paw-pattern bg-paw-size opacity-40"></div>
+<div class="fixed top-0 left-0 w-[50vw] h-[50vw] bg-primary-container/20 rounded-full blur-[100px] z-[-1] -translate-x-1/2 -translate-y-1/2"></div>
+<div class="fixed bottom-0 right-0 w-[60vw] h-[60vw] bg-secondary-fixed/20 rounded-full blur-[120px] z-[-1] translate-x-1/3 translate-y-1/3"></div>
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md sticky top-0 z-50 w-full px-margin-desktop py-4 shadow-sm border-b border-surface-variant/50">
+<div class="max-w-container-max mx-auto flex justify-between items-center w-full">
+<a class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+                Rivigalin Kennel
+            </a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-label-md font-label-md text-primary border-b-2 border-primary pb-1" href="#">Our Dogs</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Puppies</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<div class="hidden md:flex items-center gap-4">
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full text-label-md font-label-md hover:bg-primary-fixed transition-colors shadow-sm scale-95 active:transition-transform">
+                    Contact Us
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col relative w-full pt-16 pb-32">
+<!-- Hero Section -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative mb-section-y">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center min-h-[614px]">
+<div class="z-10 flex flex-col items-start gap-6 relative">
+<!-- Subtle blob behind text -->
+<div class="absolute -z-10 top-[-20%] left-[-10%] w-[120%] h-[140%] bg-primary-container/30 organic-shape blur-2xl"></div>
+<span class="text-label-md font-label-md text-secondary uppercase tracking-widest bg-secondary-fixed/50 px-4 py-1.5 rounded-full inline-block">Tutustu laumaan</span>
+<h1 class="text-display-lg font-display-lg text-on-background relative">
+                        Meidän <br/>
+<span class="text-primary italic">Koiramme</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md">
+                        Jokainen koira on perheenjäsen. Tutustu Inkoon maaseudun rauhassa kasvaneisiin belgianpaimenkoiriimme ja mittelspitzeihemme.
+                    </p>
+</div>
+<div class="relative w-full aspect-[4/3] lg:aspect-square flex items-center justify-center">
+<!-- Organic Image Masking -->
+<div class="absolute inset-0 organic-shape overflow-hidden shadow-ambient bg-surface-container-highest">
+<img alt="Two happy dogs playing in a sun-drenched rural field, soft warm lighting, organic aesthetic, focus on their joyful expressions." class="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700" data-alt="Two happy dogs playing in a sun-drenched rural field, soft warm lighting, organic aesthetic, focus on their joyful expressions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmXG8cbabz4T23yHtI4TnOGAZZYrOLBjg2uosd6dI9eSRayDNFzOWLnKW7ONqgM7e1zWumGIEKYHXFjAg9UC3fSvmNQZw-obHzcYejHf2GGeIux5z994tl5JaG1ShLikGEWHlYCXFCSCE2VAMjeJL1qLUUIeKj686IH8AC5i-n8mF0QLkyU0cLHZoifEgoNRHd1PKFxlcqbZTM8d6zftXXFIYmj0k4rYDB9iq1ycJTWV_b8nGjPi3dA0A9EZB3PymclbxqjIPj8CI"/>
+</div>
+<!-- Floating decorative element -->
+<div class="absolute -bottom-8 -left-8 bg-surface p-4 rounded-2xl shadow-ambient border border-surface-variant flex items-center gap-3 animate-[bounce_4s_infinite]">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<p class="text-label-md font-label-md text-on-surface m-0">Terveitä &amp;</p>
+<p class="text-caption font-caption text-on-surface-variant m-0">Onnellisia</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Belgian Shepherds Gallery (Bento Grid) -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-y relative">
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px bg-surface-variant flex-grow"></div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface text-center">Belgianpaimenkoirat</h2>
+<div class="h-px bg-surface-variant flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Dog Card 1 (Large) -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-[1.5rem] shadow-ambient overflow-hidden group relative flex flex-col">
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="bg-primary-container text-on-primary-container text-caption font-label-md px-3 py-1 rounded-full shadow-sm">Groenendael</span>
+<span class="bg-surface/90 text-on-surface text-caption font-label-md px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">male</span> Uros
+                        </span>
+</div>
+<div class="h-[60%] w-full overflow-hidden rounded-t-[1.5rem] relative">
+<img alt="Majestic black Belgian Shepherd Groenendael standing proudly in a vibrant green forest, cinematic warm light filtering through trees." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Majestic black Belgian Shepherd Groenendael standing proudly in a vibrant green forest, cinematic warm light filtering through trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYZc2oRdntrktzJ1MRAgwx46lZ7Ia6XFn7DGaAvILJSMjTgm7dFqd8f3c2bzZvULoJuIGATcg-JQ2yn7IwS-rcxtl6WqbTNR71LNXVwhP9da4llrOd034xzTChWoYtmUp9XKrCwn90CU1nyYV5aMK2zB4MY2--ndOs9wPYvXjlTrVHohGCnlQWmYbvjC3FhgF5FS3xlZk7Zk3R4lI3TdRtJBojn4GG7t8VVl6BMxmHmYBX_g7UBh1wt75wLSPu3xNzyH52J2ThX_Y"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between bg-surface-container-lowest relative z-10 border-t-[4px] border-primary-container">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Shadow <span class="text-body-md font-body-md text-on-surface-variant font-normal">(Rivigalin Varjo)</span></h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-2">Rauhallinen ja harkitseva laumanjohtaja. Rakastaa pitkiä metsälenkkejä ja agilitya.</p>
+</div>
+<div class="flex gap-2 mt-4">
+<span class="text-caption bg-surface-variant px-2 py-1 rounded-md text-on-surface-variant">FI MVA</span>
+<span class="text-caption bg-surface-variant px-2 py-1 rounded-md text-on-surface-variant">Synt. 2019</span>
+</div>
+</div>
+</div>
+<!-- Dog Card 2 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] shadow-ambient overflow-hidden group relative flex flex-col">
+<div class="absolute top-4 right-4 z-20">
+<span class="bg-paw-pink text-on-surface text-caption font-label-md px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">female</span> Narttu
+                        </span>
+</div>
+<div class="h-1/2 w-full overflow-hidden">
+<img alt="Alert female Belgian Shepherd Tervueren looking attentively, outdoors in a sunlit field, soft shallow depth of field." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Alert female Belgian Shepherd Tervueren looking attentively, outdoors in a sunlit field, soft shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmm7U68ZpQBA1gaauoDfwnGBIqsDtas-Tzy6PPvHuLD6bCsnrqNz-xwVv6Mz92cLR06cFUAQyfgSna8SMHAMmYcOSlYU3L5IifAytbCqo_3rsh8P-Z6hNyUQnnunr0mE7U_e3YjUyHfMKHc5o3pOAA2ec4HRZBytOWkjs7-RNN9xYebATmU-jNAq6PJkV4lByUHlVxNlB3uGJOgxcIE9dLff-RwxneduhHq8kRAvrdfo6uxRsc-KWm5XbQp3RxF2ijI3RICXIz6_o"/>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-lowest relative z-10 border-t-[4px] border-secondary-container">
+<span class="text-caption font-label-md text-secondary mb-1">Tervueren</span>
+<h3 class="text-[20px] font-headline-md text-on-surface mb-2 leading-tight">Luna <br/><span class="text-[14px] font-body-md text-on-surface-variant font-normal">Rivigalin Kuu</span></h3>
+<p class="text-[14px] font-body-md text-on-surface-variant line-clamp-2">Iloinen ja energinen harrastuskoira.</p>
+</div>
+</div>
+<!-- Dog Card 3 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] shadow-ambient overflow-hidden group relative flex flex-col">
+<div class="absolute top-4 right-4 z-20">
+<span class="bg-paw-pink text-on-surface text-caption font-label-md px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">female</span> Narttu
+                        </span>
+</div>
+<div class="h-1/2 w-full overflow-hidden">
+<img alt="Beautiful young Belgian Shepherd Groenendael resting on green grass, soft afternoon sunlight highlighting her black coat." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Beautiful young Belgian Shepherd Groenendael resting on green grass, soft afternoon sunlight highlighting her black coat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6cXEa-ytxNZe9oQ_iP2ABplXYPOEdJc0iO2njJnJiB0xZA5JAlumXLok5V7EPcmM3E9HnYf8hTgA96z3R3aDzoK2SMPBCkJDfGTPCsUq2i1paot8kWSYjOV3xJ3jG8bDwzeIFXJjPLzAB_PLeCk4s7p6LTLDLLox4lssVkZIlP3J-D7pBESc4VUibFF7Klhz6SDii4jiXhhrQ2odS5wOK_R2tHEIuWvp7GbMlOsavHaM_CwyrHB1w9-sBRZVIyPy21MouAxKngo4"/>
+</div>
+<div class="p-6 flex-grow flex flex-col bg-surface-container-lowest relative z-10 border-t-[4px] border-tertiary-container">
+<span class="text-caption font-label-md text-tertiary mb-1">Groenendael</span>
+<h3 class="text-[20px] font-headline-md text-on-surface mb-2 leading-tight">Nova <br/><span class="text-[14px] font-body-md text-on-surface-variant font-normal">Rivigalin Tähti</span></h3>
+<p class="text-[14px] font-body-md text-on-surface-variant line-clamp-2">Lempeä nuorukainen, joka rakastaa kaikkia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mittelspitz Gallery (Glassmorphism & Asymmetric) -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-y relative">
+<div class="absolute right-0 top-20 w-[400px] h-[400px] bg-secondary-container/40 rounded-full blur-[80px] -z-10"></div>
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px bg-surface-variant flex-grow"></div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface text-center">Mittelspitzit</h2>
+<div class="h-px bg-surface-variant flex-grow"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-stretch">
+<!-- Info block -->
+<div class="w-full md:w-1/3 bg-surface/60 backdrop-blur-md rounded-[2rem] p-8 shadow-ambient border border-white/50 flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">star</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">Pienet <br/>Persoonat</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Mittelspitzimme ovat eloisia, älykkäitä ja äärimmäisen kiintyneitä omistajiinsa. Ne ovat täydellisiä seurakoiria, jotka nauttivat niin sohvalla makoilusta kuin aktiivisesta arjestakin.
+                    </p>
+</div>
+<div class="w-full md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Mittel Card 1 -->
+<div class="bg-surface-container-lowest rounded-3xl p-4 shadow-ambient hover:-translate-y-2 transition-transform duration-300">
+<div class="aspect-square rounded-2xl overflow-hidden mb-4 relative">
+<div class="absolute top-3 right-3 z-10">
+<span class="bg-surface/90 text-on-surface text-caption font-label-md px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">male</span>
+</span>
+</div>
+<img alt="Cute fluffy white Mittelspitz dog sitting obediently indoors, bright natural lighting, soft focus background." class="w-full h-full object-cover" data-alt="Cute fluffy white Mittelspitz dog sitting obediently indoors, bright natural lighting, soft focus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxhWaZIMELtpi1qH8mtqliEcj0JTceL6FhiYJ1rr6wH2tu6BIY-lK-p6dcmhyZTKTuRENvASTOaJfKWyWF6NHZoAvzcaaKfhp2ldSqTMvFosI9a6Zwx4FNJUC_Bo22x5t5LRX6jmJSnJEGbfdR9Nz-z4lu3zbbq6esoKH0cWe-kVafblCXBvjxBsthTqDkbRiLr5l8WF0qflFcWMd-_u8L1rEJi1sg7O9yOYnjLgzgj_xuIu_ZrC6RzwODPeN_Ep27dLEw24a5NJM"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-end mb-1">
+<h4 class="text-[22px] font-headline-md text-on-surface">Pörrö</h4>
+<span class="text-caption text-secondary font-medium">Valkoinen</span>
+</div>
+<p class="text-caption text-on-surface-variant mb-2">Rivigalin Pilvenhattara</p>
+<p class="text-[14px] font-body-md text-on-surface-variant line-clamp-2">Pieni koira, jolla on suuri ego. Valloittaa kaikkien sydämet.</p>
+</div>
+</div>
+<!-- Mittel Card 2 -->
+<div class="bg-surface-container-lowest rounded-3xl p-4 shadow-ambient hover:-translate-y-2 transition-transform duration-300 sm:translate-y-8">
+<div class="aspect-square rounded-2xl overflow-hidden mb-4 relative">
+<div class="absolute top-3 right-3 z-10">
+<span class="bg-paw-pink text-on-surface text-caption font-label-md px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">female</span>
+</span>
+</div>
+<img alt="Adorable orange sable Mittelspitz dog looking playfully at camera, standing in a garden with soft sunlight." class="w-full h-full object-cover" data-alt="Adorable orange sable Mittelspitz dog looking playfully at camera, standing in a garden with soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9gIm9hCzLO6D01A-M6DcDgMi6UsAF8NUQrzWoT6mkaYrJ1FVBu7ViZzSy0wLz9UGdIWdw-aYb3U-_imHQiG4fEID0izL8PXUCyFlGQTE68lXgLbnyiOua_uDKYB0BWSNeLXEeLs2PjhYWT8mEigOAiycaBP-mVE1z0M0Wgt5dh-ygjSA4DBmq9XDz_785wBoXRYbSpYDZJeu3R-5azlZyhIMgaCPTohuAkkenKzeM75Yg0e0ktypI4s0IemsofdxoaCq65AhFFVY"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-end mb-1">
+<h4 class="text-[22px] font-headline-md text-on-surface">Kettu</h4>
+<span class="text-caption text-secondary font-medium">Oranssi</span>
+</div>
+<p class="text-caption text-on-surface-variant mb-2">Rivigalin Syystuuli</p>
+<p class="text-[14px] font-body-md text-on-surface-variant line-clamp-2">Ovela ja ketterä. Rakastaa pallopelejä ja agilitya.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action (Soft & Organic) -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop my-12">
+<div class="bg-sun-yellow-light rounded-[2.5rem] p-12 text-center relative overflow-hidden flex flex-col items-center shadow-sm">
+<!-- Decorative background elements -->
+<div class="absolute top-[-20%] left-[-10%] w-[50%] h-[150%] bg-white/40 organic-shape blur-xl"></div>
+<div class="absolute bottom-[-50%] right-[-10%] w-[60%] h-[150%] bg-primary-container/30 organic-shape-alt blur-xl"></div>
+<span class="material-symbols-outlined text-5xl text-primary mb-6 relative z-10" style="font-variation-settings: 'FILL' 1;">waving_hand</span>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-4 max-w-xl relative z-10">Haluatko kuulla lisää koiristamme tai tulevista pentueista?</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8 max-w-lg relative z-10">Ota rohkeasti yhteyttä, kerromme mielellämme lisää kasvatustyöstämme ja arjestamme koirien kanssa Inkoossa.</p>
+<button class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-md font-label-md shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 relative z-10 flex items-center gap-2">
+                    Ota yhteyttä
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-dim full-width rounded-t-xl w-full px-margin-desktop py-12 max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-gutter mt-auto">
+<div class="flex flex-col gap-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined">pets</span>
+                Rivigalin
+            </div>
+<p class="text-caption font-caption text-secondary dark:text-secondary-fixed max-w-xs">
+                © 2024 Rivigalin Kennel. Family-based breeding in Inkoo.
+            </p>
+</div>
+<nav class="flex flex-wrap gap-x-8 gap-y-4 items-center">
+<a class="text-body-md font-body-md text-primary font-bold hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Our Dogs</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Puppies</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+</nav>
+</footer>
+</body></html>

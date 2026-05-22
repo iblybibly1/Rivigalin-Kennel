@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rivigalin Kennel - Belgianpaimenkoiria &amp; Mittelspitzejä</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Work+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#725b00",
+                        "on-background": "#1b1c1a",
+                        "surface-container-high": "#eae8e4",
+                        "surface-variant": "#e4e2de",
+                        "tertiary-container": "#e7d5be",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#8ad3d5",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#f9d461",
+                        "on-surface-variant": "#4d4636",
+                        "on-primary-fixed-variant": "#574500",
+                        "primary-fixed": "#ffe086",
+                        "teal-dark": "#2E5C5E",
+                        "primary": "#735c00",
+                        "surface-tint": "#735c00",
+                        "on-primary-fixed": "#231b00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-fixed": "#231a0c",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#f2e0c9",
+                        "secondary": "#14696b",
+                        "inverse-surface": "#30312e",
+                        "outline-variant": "#d0c6b0",
+                        "background": "#fbf9f5",
+                        "on-tertiary-fixed-variant": "#514534",
+                        "surface-dim": "#dbdad6",
+                        "surface": "#fbf9f5",
+                        "surface-container-low": "#f5f3ef",
+                        "tertiary-fixed-dim": "#d5c4ae",
+                        "tertiary": "#695c4a",
+                        "inverse-primary": "#e7c352",
+                        "surface-container-highest": "#e4e2de",
+                        "on-secondary-fixed-variant": "#004f51",
+                        "surface-bright": "#fbf9f5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#1e6f71",
+                        "earth-gray": "#918370",
+                        "on-tertiary-container": "#685c4a",
+                        "secondary-fixed": "#a5eff1",
+                        "surface-container": "#efeeea",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-secondary-fixed": "#002021",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#e7c352",
+                        "secondary-container": "#a5eff1",
+                        "paw-pink": "#F8B4B4",
+                        "outline": "#7e7664",
+                        "sun-yellow-light": "#FEF3C7",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "blob": "40% 60% 70% 30% / 40% 50% 60% 50%",
+                        "blob-2": "60% 40% 30% 70% / 60% 30% 70% 40%"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Work Sans"],
+                        "caption": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .bg-paw-pattern {
+                background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+                background-size: 20px 20px;
+                opacity: 0.1;
+            }
+            .organic-shadow {
+                box-shadow: 0 20px 40px -10px rgba(107, 94, 76, 0.08);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md sticky top-0 z-50 w-full transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">pets</span>
+                Rivigalin Kennel
+            </div>
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Our Dogs</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Puppies</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Contact</a></li>
+</ul>
+<div class="hidden md:block">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-on-primary-container transition-colors duration-200 shadow-md" href="#">
+                    Contact Us
+                </a>
+</div>
+<!-- Mobile Menu Toggle (Visual only for UI mockup) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
+<!-- Organic Background Blob -->
+<div class="absolute top-0 right-0 w-full md:w-3/4 h-[120%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[300px] -z-10 transform origin-top-right rotate-3 md:rotate-0 opacity-80"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col-reverse md:flex-row items-center gap-12 md:gap-gutter">
+<!-- Text Content -->
+<div class="w-full md:w-1/2 flex flex-col gap-6 relative z-10">
+<h1 class="text-headline-lg-mobile md:text-display-lg font-display-lg text-on-background">
+<span class="block">Rivigalin Kennel:</span>
+<span class="text-primary block mt-2">Belgianpaimenkoiria &amp; Mittelspitzejä</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+                        Perhekeskeistä, kodinomaista kasvatusta luonnon keskellä Inkoossa. Koiramme elävät kanssamme arjessa, rakastettuina perheenjäseninä aurinkoisilla metsäretkillä ja kotisohvalla.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-on-primary-container transition-all duration-300 organic-shadow transform hover:-translate-y-1" href="#rodut">
+                            Tutustu Koiriimme
+                        </a>
+<a class="bg-transparent border-2 border-secondary text-secondary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-secondary hover:text-on-secondary transition-all duration-300" href="#yhteys">
+                            Ota Yhteyttä
+                        </a>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="w-full md:w-1/2 relative flex justify-center items-center">
+<div class="relative w-full max-w-md aspect-square">
+<!-- Decorative shapes behind image -->
+<div class="absolute inset-0 bg-sun-yellow-light rounded-blob transform translate-x-4 translate-y-4 -z-10"></div>
+<img alt="Hero image" class="object-cover w-full h-full rounded-blob organic-shadow border-8 border-surface" data-alt="A joyful Belgian Shepherd dog running freely through a sun-drenched, lush green forest in Inkoo. The lighting is warm and golden, reflecting a happy, family-oriented rural kennel environment. The modern-organic style emphasizes soft natural colors, bright sunlight filtering through leaves, and a sense of vibrant health and deep connection to nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszyefnTqks_sbYgaMaAdOzkd2mVvfOw41tJzB2zFQV-yZvsZU-1RRs9aZL8r2RgzcSIr7m34Xsskh97VC_mYvy7HTjCsiwEKMn4XOsROyLMvJNDvgGnZiqTNeWvfVzS3LL1zOsxJfJTETlUtDNASI0coDX-jLjETSDToITyszHUF361Ulc8xaR1ySr4VjI3-YyY5u77R7tcAJgeE2uiM0wKoI7C75iHeF5Hsu2kh18Ng246F66FWIRfA1ngj8Dcm9rRCJB7Sv7fs"/>
+<!-- Floating Badges -->
+<div class="absolute top-10 -left-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">forest</span>
+<span class="font-label-md text-label-md text-on-surface">Inkoo, Finland</span>
+</div>
+<div class="absolute bottom-10 -right-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
+<span class="material-symbols-outlined text-paw-pink" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-md text-label-md text-on-surface">Perhekasvatus</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Breeds Section -->
+<section class="py-24 bg-surface-container-lowest relative" id="rodut">
+<div class="absolute inset-0 bg-paw-pattern pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-on-background mb-4">Kasvattamamme Rodut</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto">Keskitymme kahteen upeaan rotuun, jotka sopivat täydellisesti aktiiviseen ja rakastavaan kotiin.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-gutter">
+<!-- Breed Card 1 -->
+<div class="bg-surface rounded-3xl p-8 organic-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border-t-4 border-primary">
+<div class="w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-tertiary-container relative">
+<img alt="Belgianpaimenkoira" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A noble, alert black Belgian Shepherd (Groenendael) sitting proudly in a grassy field with soft, natural lighting. The mood is calm and intelligent, representing the modern-organic kennel aesthetic. High detail on the shiny black coat, set against a warm, muted natural background that evokes trust and professional breeding standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdKmLF1NSs2DEcGM_jj0GltnVb_Sih5YOk8DzB2NVSGu5FJodtsxmjhAHUGZn7XkTzMGH5NCHKHhjh_wLylVUx3lCX8BGkt5JFVLpn4a_g4iLFiy3ZZEp2LSsZFWW39itVpK1oOkEyX99p8PLWydhjClF4bpC2BByS5uoUyhX-PcW6Lnn6vg_kuwooQLYpKnRaAGdr81Fen4QWiO6TfUr16BnC1o0jZ--vWRB1vf6ZHo6BTsWGae0vO82sRJXmPZrpG8-liL0ePg8"/>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-background mb-3">Belgianpaimenkoira</h3>
+<span class="bg-surface-container text-secondary font-caption text-caption px-3 py-1 rounded-full mb-4">Groenendael</span>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                            Älykäs, uskollinen ja energinen kumppani. Sopii aktiiviseen perheeseen, harrastuksiin ja näyttelyihin.
+                        </p>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 hover:text-on-primary-container transition-colors" href="#">
+                            Lue lisää <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Breed Card 2 -->
+<div class="bg-surface rounded-3xl p-8 organic-shadow flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border-t-4 border-secondary">
+<div class="w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-secondary-container relative">
+<img alt="Mittelspitz" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A fluffy, smiling Mittelspitz dog standing on a wooden porch surrounded by soft greenery. The sunlight creates a warm, inviting halo around the dog's fur. The modern-organic style highlights the playful, friendly nature of the breed in a comfortable, home-like rural setting, using warm earthy tones and soft ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDABPQMc2THu3-uiRbchyjqoBarJRMYgM0bhQgEwdDCqNgDBtYKoSsh_zLe8HyI_Gg13A9nI3Ns-tu9alWq_Q92OQaFmwoweT8ocIsyfD-nM5F2L4EsrX2PkHBHCHzzsGQqk1YvptE8n1uvTchYbtF6weojLeJIAbaFU1I-BwOVTc3XO9sOL5UVgMPdnFnxUUwb0VCagD4yJAQA2XZsmCwVqtB8eiY7tBF_zht3IHJiIj0SuGK2rvvVTDSJOCsTx--l8FoRwa7T_HQ"/>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-background mb-3">Mittelspitz</h3>
+<span class="bg-surface-container text-primary font-caption text-caption px-3 py-1 rounded-full mb-4">Seurakoira</span>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                            Eloisa, kiintyvä ja valpas pystykorva. Erinomainen perhekoira, joka rakastaa olla mukana kaikessa tekemisessä.
+                        </p>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:text-secondary-fixed-dim transition-colors" href="#">
+                            Lue lisää <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="py-24 bg-tertiary-fixed/30 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-64 h-64 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/3] rounded-blob-2 overflow-hidden organic-shadow relative">
+<img alt="Koiria metsässä" class="object-cover w-full h-full" data-alt="A wide, peaceful shot of several dogs, including a Belgian Shepherd and a Mittelspitz, walking comfortably together on a winding dirt path deep in a sunlit pine forest. The scene evokes the 'Philosophy' of a natural, stress-free rural life. The modern-organic visual style features soft dappled sunlight, rich mossy greens, and warm earthy browns, conveying health, freedom, and harmony." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_YnlPcyZJo7RcrN1uf5aHu53_irI6Tm1BQp2dx6ZeE9Zg5xYIp6f-aVBPWyd6GtQkyPcGh4rsqUWlFpzslvBYOE3ZMzR0vZ64mxDzh_8-F0gzCl4GNiRKEhV0zmPN3nWVoLWJfs3lI1bLm-SZYVG-Uwc7l6YcT4kRSAyaBHTmuDwpQ9B78cqR8tZPg_yGoYktpekiYQUsLFPfHkMfF36mh1elaE7xXOTpqfPuDHWs_lkBjoP7IrtVJczU9LWTdSkAS0XYXR8vBI"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -right-6 bg-surface p-4 rounded-full organic-shadow text-primary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-wider mb-2 block">Filosofiamme</span>
+<h2 class="text-headline-lg font-headline-lg text-on-background mb-6">Elämää metsän siimeksessä</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        Uskomme, että onnellisin koira on sellainen, joka saa elää lajityypillistä elämää. Inkoon maaseudulla sijaitseva kotimme tarjoaa koirillemme ihanteellisen ympäristön.
+                    </p>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8">
+                        Meillä koirat eivät asu erillisissä kenneltiloissa, vaan ne ovat rakkaita perheenjäseniä. Ne nukkuvat sohvalla vieressämme, ulkoilevat vapaana suurella tontillamme ja osallistuvat arkemme touhuihin. Tämä luo luottavaisen ja tasapainoisen pohjan myös kasvateillemme.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-background font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Kodinomaista kasvatusta
+                        </li>
+<li class="flex items-center gap-3 text-on-background font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Runsaasti ulkoilua luonnossa
+                        </li>
+<li class="flex items-center gap-3 text-on-background font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Terveys ja luonne edellä
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-dim full-width rounded-t-xl mt-auto">
+<div class="w-full px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-gutter items-center md:items-start">
+<div class="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined text-2xl">pets</span>
+                    Rivigalin Kennel
+                </div>
+<p class="text-body-md font-body-md text-secondary dark:text-secondary-fixed text-center md:text-left max-w-xs">
+                    © 2024 Rivigalin Kennel. Family-based breeding in Inkoo.
+                </p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<ul class="flex flex-wrap justify-center md:justify-end gap-6">
+<li><a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Our Dogs</a></li>
+<li><a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Puppies</a></li>
+<li><a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant text-caption font-caption hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
