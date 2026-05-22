@@ -11,10 +11,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script src="assets/theme.js"></script>
 <link rel="stylesheet" href="assets/site.css">
-<style>
-  [data-current-variant="forest"] .variant-snow { display: none; }
-  [data-current-variant="snow"] .variant-forest { display: none; }
-</style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden relative min-h-screen flex flex-col" data-page="dogs">
 
@@ -25,11 +21,7 @@
 
 <div data-mount="header"></div>
 
-<main class="flex-grow flex flex-col relative w-full pt-16 pb-32"
-      data-variant-root
-      data-variant-key="dogs"
-      data-variants="forest,snow"
-      data-variant-label="Season">
+<main class="flex-grow flex flex-col relative w-full pt-16 pb-32">
 
   <!-- ====== HERO ====== -->
   <section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative mb-section-y">
@@ -79,10 +71,7 @@
           </span>
         </div>
         <div class="h-[260px] md:h-[60%] w-full overflow-hidden rounded-t-[1.5rem] relative">
-          <!-- Forest variant -->
-          <img alt="Shadow metsässä" class="variant-forest w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKib7jjQNtyfwg6XA6T3O-cO7sAaL4DQtbGZMc9ym1oAtsrBu1KKkcwnGaTMxTzla9ItPfnQMCBU2po6MiQDzCJKWrPyTT0pIGyVS03LoAK67_-ZLrokzUr1qFWpkIyXa86slYQtlzABdOszM2-_ziWoy_kgxp56ozDlkqZIre4RCqtaqRSJMHIf3yl_w0FNWS2mTtCW5YzytIy5raH1dfzoIX5mVlsxaPAbXV2yd5Isl5lt5vuXnJA7NuLZVy6ljCGYP5YlGZhQ">
-          <!-- Snow variant -->
-          <img alt="Shadow lumessa" class="variant-snow w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0BtRqJTMIsXAjRJ-S0nZklQgazntsH9Sn4rVAwZPfp3dVBpjcSrZRjWgn-EzKYGZs7jwqYZPtvoJ82W2P2leRd1tMBgZIV0NxKD-p_sPxpFUIrnFct8RrNl1KvRcZHo-6QH_Q-7y5lFqXnHj-nLmYtkHJPelvwZ3Ph5xUh0pdG6S2GK0zCvqkg5Ubh2sJZ6uqG2hc5PidkIVwoiiOaR9CenMbFx5MquqhePTisit01Ojf8Nmi2fA1TDoPlJ6GqPcHxUReU1kb07RvLA">
+          <img alt="Shadow metsässä" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKib7jjQNtyfwg6XA6T3O-cO7sAaL4DQtbGZMc9ym1oAtsrBu1KKkcwnGaTMxTzla9ItPfnQMCBU2po6MiQDzCJKWrPyTT0pIGyVS03LoAK67_-ZLrokzUr1qFWpkIyXa86slYQtlzABdOszM2-_ziWoy_kgxp56ozDlkqZIre4RCqtaqRSJMHIf3yl_w0FNWS2mTtCW5YzytIy5raH1dfzoIX5mVlsxaPAbXV2yd5Isl5lt5vuXnJA7NuLZVy6ljCGYP5YlGZhQ">
         </div>
         <div class="p-8 flex-grow flex flex-col justify-between bg-surface-container-lowest relative z-10 border-t-[4px] border-primary-container">
           <div>

@@ -11,29 +11,17 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script src="assets/theme.js"></script>
 <link rel="stylesheet" href="assets/site.css">
-<style>
-  /* Variant-specific show/hide. */
-  [data-current-variant="v1"] .variant-v2 { display: none; }
-  [data-current-variant="v2"] .variant-v1 { display: none; }
-</style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col overflow-x-hidden" data-page="home">
 <div data-mount="header"></div>
 
-<main class="flex-grow"
-      data-variant-root
-      data-variant-key="home"
-      data-variants="v1,v2"
-      data-variant-label="Hero">
+<main class="flex-grow">
   <!-- ====== HERO ====== -->
   <section class="relative w-full overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
 
-    <!-- v1: subtle cream blob -->
-    <div class="variant-v1 absolute top-0 right-0 w-full md:w-3/4 h-[110%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[280px] -z-10 origin-top-right rotate-3 md:rotate-0 opacity-30"></div>
-
-    <!-- v2: bold yellow geometric blob -->
-    <div class="variant-v2 absolute top-0 right-0 w-full md:w-[60%] h-[115%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[300px] -z-10 origin-top-right rotate-2 md:rotate-0 opacity-90"></div>
-    <div class="variant-v2 absolute -top-20 -left-20 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl -z-10 hidden md:block"></div>
+    <!-- Bold yellow geometric blob -->
+    <div class="absolute top-0 right-0 w-full md:w-[60%] h-[115%] bg-primary-container rounded-bl-[150px] md:rounded-bl-[300px] -z-10 origin-top-right rotate-2 md:rotate-0 opacity-90"></div>
+    <div class="absolute -top-20 -left-20 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl -z-10 hidden md:block"></div>
 
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
       <!-- Text Content -->
@@ -57,18 +45,7 @@
 
       <!-- Hero Image -->
       <div class="w-full md:w-1/2 relative flex justify-center items-center">
-        <!-- v1 image (snow dog, circular) -->
-        <div class="variant-v1 relative w-full max-w-md aspect-square">
-          <div class="absolute inset-0 bg-sun-yellow-light rounded-blob transform translate-x-4 translate-y-4 -z-10"></div>
-          <img alt="Musta belgianpaimenkoira lumessa" class="object-cover w-full h-full rounded-blob organic-shadow border-8 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKib7jjQNtyfwg6XA6T3O-cO7sAaL4DQtbGZMc9ym1oAtsrBu1KKkcwnGaTMxTzla9ItPfnQMCBU2po6MiQDzCJKWrPyTT0pIGyVS03LoAK67_-ZLrokzUr1qFWpkIyXa86slYQtlzABdOszM2-_ziWoy_kgxp56ozDlkqZIre4RCqtaqRSJMHIf3yl_w0FNWS2mTtCW5YzytIy5raH1dfzoIX5mVlsxaPAbXV2yd5Isl5lt5vuXnJA7NuLZVy6ljCGYP5YlGZhQ">
-          <div class="absolute top-10 -left-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
-            <span class="material-symbols-outlined text-secondary" data-fill="1">forest</span>
-            <span class="font-label-md text-label-md text-on-surface">Inkoo, Finland</span>
-          </div>
-        </div>
-
-        <!-- v2 image (forest dog, organic blob) -->
-        <div class="variant-v2 relative w-full max-w-md aspect-square">
+        <div class="relative w-full max-w-md aspect-square">
           <div class="absolute inset-0 bg-sun-yellow-light rounded-blob-2 transform -translate-x-4 -translate-y-4 -z-10"></div>
           <img alt="Iloinen belgianpaimenkoira metsässä" class="object-cover w-full h-full rounded-blob organic-shadow border-8 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszyefnTqks_sbYgaMaAdOzkd2mVvfOw41tJzB2zFQV-yZvsZU-1RRs9aZL8r2RgzcSIr7m34Xsskh97VC_mYvy7HTjCsiwEKMn4XOsROyLMvJNDvgGnZiqTNeWvfVzS3LL1zOsxJfJTETlUtDNASI0coDX-jLjETSDToITyszHUF361Ulc8xaR1ySr4VjI3-YyY5u77R7tcAJgeE2uiM0wKoI7C75iHeF5Hsu2kh18Ng246F66FWIRfA1ngj8Dcm9rRCJB7Sv7fs">
           <div class="absolute top-10 -left-6 bg-surface px-4 py-2 rounded-full organic-shadow flex items-center gap-2 border border-surface-variant">
