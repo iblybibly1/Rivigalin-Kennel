@@ -100,7 +100,7 @@
               © 2024 Rivigalin Kennel. Family-based breeding in Inkoo.
             </p>
             <p class="text-caption font-caption text-on-surface-variant/80 text-center md:text-left max-w-xs" data-en="Belgian Shepherds &amp; Mittelspitz — raised with heart.">
-              Belgianpaimenkoiria &amp; Mittelspitzejä — kasvatettuna sydämellä.
+              Belgianpaimenkoiria &amp; Mittelspitzejä — Rakkaudella
             </p>
           </div>
           <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 items-center">
