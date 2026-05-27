@@ -95,8 +95,8 @@
               <span class="material-symbols-outlined text-2xl" data-fill="1">pets</span>
               Rivigalin Kennel
             </a>
-            <p class="text-body-md font-body-md text-on-surface-variant text-center md:text-left max-w-xs">
-              © 2024 Rivigalin Kennel. Family-based breeding in Inkoo.
+            <p class="text-body-md font-body-md text-on-surface-variant text-center md:text-left max-w-xs" data-en="© 2024 Rivigalin Kennel. Family-based breeding in Inkoo.">
+              © 2024 Rivigalin Kennel. Perhelähtöistä kasvatusta Inkoossa.
             </p>
             <p class="text-caption font-caption text-on-surface-variant/80 text-center md:text-left max-w-xs" data-en="Belgian Shepherds &amp; Mittelspitz — raised with heart.">
               Belgianpaimenkoiria &amp; Mittelspitzejä — Rakkaudella
