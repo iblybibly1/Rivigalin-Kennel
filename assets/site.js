@@ -3,10 +3,10 @@
   const CURRENT = (document.body && document.body.dataset.page) || "";
 
   const NAV = [
-    { href: "index.html", label: "Home", key: "home" },
-    { href: "about.html", label: "About Us", key: "about" },
-    { href: "puppies.html", label: "Puppies", key: "puppies" },
-    { href: "contact.html", label: "Contact", key: "contact" }
+    { href: "index.html",   labelFi: "Etusivu",        labelEn: "Home",           key: "home" },
+    { href: "about.html",   labelFi: "Meistä",         labelEn: "About us",       key: "about" },
+    { href: "puppies.html", labelFi: "Pentu meiltä?",  labelEn: "Puppy from us?", key: "puppies" },
+    { href: "contact.html", labelFi: "Ota yhteyttä",   labelEn: "Contact",        key: "contact" }
   ];
 
   function navHTML() {
@@ -15,7 +15,7 @@
       const cls = active
         ? "text-label-md font-label-md text-primary border-b-2 border-primary pb-1"
         : "text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200";
-      return `<a class="${cls}" href="${item.href}">${item.label}</a>`;
+      return `<a class="${cls}" href="${item.href}" data-en="${item.labelEn}">${item.labelFi}</a>`;
     }).join("");
   }
 
@@ -25,7 +25,7 @@
       const cls = active
         ? "text-body-md font-body-md text-primary font-bold transition-colors"
         : "text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100";
-      return `<li><a class="${cls}" href="${item.href}">${item.label}</a></li>`;
+      return `<li><a class="${cls}" href="${item.href}" data-en="${item.labelEn}">${item.labelFi}</a></li>`;
     }).join("");
   }
 
@@ -69,7 +69,7 @@
             </button>
           </div>
           <div class="flex flex-col gap-5 mt-4">
-            ${NAV.map(i => `<a href="${i.href}" class="${i.key === CURRENT ? "active" : ""}">${i.label}</a>`).join("")}
+            ${NAV.map(i => `<a href="${i.href}" class="${i.key === CURRENT ? "active" : ""}" data-en="${i.labelEn}">${i.labelFi}</a>`).join("")}
           </div>
           <div class="lang-switcher lang-switcher--block" role="group" aria-label="Language">
             <button type="button" data-lang="fi">FI</button>
