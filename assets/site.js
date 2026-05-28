@@ -49,7 +49,7 @@
               <button type="button" data-lang="en">EN</button>
             </div>
             <a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-on-primary-container transition-colors duration-200 shadow-md" href="contact.html" data-en="Contact Us">
-              Contact Us
+              Ota yhteyttä
             </a>
           </div>
           <button type="button" aria-label="Open menu" class="md:hidden text-primary" data-mobile-toggle>
@@ -77,7 +77,7 @@
             <button type="button" data-lang="en">EN</button>
           </div>
           <a class="mt-auto inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full" href="contact.html" data-en="Contact Us">
-            Contact Us
+            Ota yhteyttä
           </a>
         </div>
       </div>
