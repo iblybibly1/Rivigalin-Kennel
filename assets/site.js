@@ -104,7 +104,6 @@
           </div>
           <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 items-center">
             ${footerNavHTML()}
-            <li><a class="text-caption font-caption text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
       </footer>
