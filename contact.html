@@ -175,7 +175,7 @@
 
       <!-- Form column -->
       <div class="md:col-span-8 md:order-1">
-        <form id="contact-form" class="bg-surface rounded-[2rem] p-8 md:p-10 organic-shadow border border-surface-variant space-y-6" novalidate>
+        <form id="contact-form" action="https://formspree.io/f/xbdbwyzn" method="POST" class="bg-surface rounded-[2rem] p-8 md:p-10 organic-shadow border border-surface-variant space-y-6" novalidate>
           <div class="grid md:grid-cols-2 gap-5">
             <div>
               <label class="form-label" for="first-name" data-en="First name">Etunimi</label>
@@ -312,15 +312,25 @@
   (function () {
     const form = document.getElementById("contact-form");
     if (!form) return;
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const success = document.getElementById("form-success");
-      success.classList.remove("hidden");
-      form.querySelectorAll("input, textarea").forEach(el => {
-        if (el.type === "checkbox") el.checked = false;
-        else el.value = "";
+      const btn = form.querySelector("button[type=submit]");
+      btn.disabled = true;
+      const res = await fetch("https://formspree.io/f/xbdbwyzn", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
       });
-      setTimeout(() => success.classList.add("hidden"), 6000);
+      btn.disabled = false;
+      if (res.ok) {
+        const success = document.getElementById("form-success");
+        success.classList.remove("hidden");
+        form.querySelectorAll("input, textarea").forEach(el => {
+          if (el.type === "checkbox") el.checked = false;
+          else el.value = "";
+        });
+        setTimeout(() => success.classList.add("hidden"), 6000);
+      }
     });
   })();
 </script>
