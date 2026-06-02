@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rivigalinkennel.fi/sitemap.xml
+Sitemap: https://rivigalinkennel.fi/sitemap.xml
