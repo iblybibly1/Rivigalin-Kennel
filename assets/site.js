@@ -107,7 +107,7 @@
           </ul>
         </div>
         <div class="w-full px-margin-mobile md:px-margin-desktop pb-4 max-w-container-max mx-auto flex justify-end">
-          <a href="https://hassanmasood.fi" target="_blank" rel="noopener noreferrer"
+          <a href="https://hassanmasood.fi/services" target="_blank" rel="noopener noreferrer"
              class="text-xs text-on-surface-variant/40 hover:text-on-surface-variant/70 transition-colors">
             Designed by hassanmasood.fi
           </a>
